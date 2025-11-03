@@ -1,73 +1,88 @@
 # Hi there, I'm Sanwal Zafar 👋
 
-## 🎓 About Me
-PhD Student in Industrial Engineering & Management @ Shanghai Jiao Tong University  
-Medical Officer @ Shifa Hospital, Sargodha  
-Research Focus: Computational Pathology | Machine Learning in Healthcare | Human-Robot Collaboration
+I train deep neural nets at scale.
 
-📍 Shanghai, China | 🔬 Supervisor: Prof. Wei Qin
-
----
-
-## 🔬 Research Interests
-- **Computational Pathology**: Foundation models for whole-slide image analysis
-- **Precision Medicine**: AI-driven biomarker prediction from histopathology
-- **Healthcare AI**: Clinical decision support systems for ICU and oncology
-- **Human-Robot Collaboration**: Safety-constrained robotics in warehouse operations
+PhD (Artificial Intelligence) @ Shanghai Jiao Tong University | Advised by Assoc. Prof. Wei Qin
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🧬 IHGAMP: HRD Prediction from Histopathology
-- Predicts genomic HRD status from H&E whole-slide images
-- Validated across **9 CPTAC cancer types** (5,607 slides)
-- Trained on **20,007 TCGA slides** from 10,796 patients
-- **Tech**: Python, PyTorch, OpenCLIP, Ridge Regression
+### 🔬 [OpenSlideFM: Efficient Foundation Model for Computational Pathology](https://github.com/Sjtu-Fuxilab/onco-sentry)
 
-### 🔬 OpenSlideFM: Foundation Model for WSI Analysis
-- Benchmarked against UNI, Virchow2, CONCH
-- Evaluated on CAMELYON16/17, PANDA tasks
-- **Tech**: PyTorch, OpenSlide, MIL
+A dual-scale transformer foundation model that balances performance with accessibility. Pre-trained on 20,000 TCGA slides across 31 cancer types using self-supervised learning, achieving 81.21% accuracy on pan-cancer classification with only 35M parameters. Deployable on consumer GPUs (RTX 4090, 24GB) versus datacenter requirements of existing models, democratizing foundation model access for resource-constrained institutions. Manuscript in preparation for Nature family journals.
 
-### 💊 COSMOS: ADC Target Prediction
-- Predicts TROP2 and NECTIN-4 expression from H&E slides
-- Proteomics-supervised multi-modal learning
-- **Tech**: Python, PyTorch, Proteomics
+### 🏥 [Sentinel-API: Staffable ICU Early-Warning System](https://github.com/Sjtu-Fuxilab/Sentinel-API)
 
-### 🏥 ICU Mortality Prediction
-- ML pipeline for critical care outcome prediction
-- Focus on sepsis scenarios
-- **Tech**: Python, XGBoost, scikit-learn
+A multi-horizon mortality prediction system with calibrated multi-center validation and alert-budget guardrails. Maintains strong discrimination and tight calibration across hospitals and time horizons with resource-aware deployment through workload-constrained operating points. Translates threshold choices into alerts per 100 admissions, maps to clinician review time and net monetary benefit, enabling monitored roll-out ready for governance approval.
 
-### 🤖 Guard-Constrained Human-Robot Co-Navigation
-- Digital twin framework for warehouse safety
-- Real-time collision avoidance
-- **Tech**: Python, ROS, Gazebo, TensorFlow
-- **Status**: Submitted to IJPR
+### 🤖 [Guard-Constrained Human-Robot Collaboration](https://github.com/Sjtu-Fuxilab/Guard-Constrained-HRC)
+
+A planning-time digital twin framework for evaluating robot escort policies in warehouse operations, calibrated against 8,535 production waves (MAPE ≈ 3%). Enforces iso-time tolerance (ε = 0.5-2.0%) and protective-separation-distance constraints, achieving −1.8% to −3.1% median ergonomic improvement with 48.9-62.2% adoption rate. Includes bootstrap uncertainty quantification (800 resamples) and fairness stratification suitable for safety governance. Under review at International Journal of Production Research.
 
 ---
 
-## 📊 GitHub Stats
+## 🛠 Tech Stack
 
-![Sanwal's GitHub stats](https://github-readme-stats.vercel.app/api?username=sanwal8&show_icons=true&theme=radical)
+### Languages
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/-R-276DC3?style=flat&logo=r&logoColor=white)
+
+### Machine Learning & Deep Learning
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/-XGBoost-0066CC?style=flat)
+
+### Medical Imaging
+![OpenSlide](https://img.shields.io/badge/-OpenSlide-FF6B6B?style=flat)
+![MONAI](https://img.shields.io/badge/-MONAI-00A98F?style=flat)
+
+### Tools
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
 ---
 
-## 🛠️ Tech Stack
+## 📈 GitHub Stats
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Sanwal8&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+</p>
+
+---
+
+## 🎯 Current Focus (2025)
+
+🔬 Benchmarking OpenSlideFM foundation model.    
+💊 Developing temporal biomarker discovery framework  
+
+---
+
+## 🤝 Open Science
+
+Committed to reproducible research:
+- ✅ Code released under open licenses
+- ✅ Pre-trained model weights publicly available
+- ✅ Comprehensive documentation
+- ✅ Reproducible analysis scripts
+
+Open to collaborations in computational pathology, clinical AI, and human-robot collaboration.
 
 ---
 
 ## 📫 Contact
-- 📧 Email: [your.email@sjtu.edu.cn]
-- 💼 LinkedIn: [linkedin.com/in/sanwal-zafar](https://linkedin.com/in/sanwal-zafar)
-- 🌐 Website: [sanwal8.github.io](https://sanwal8.github.io)
+
+📧 sanwalzafar@sjtu.edu.cn
+
+Open to collaborations in computational pathology and clinical AI.
 
 ---
 
-*"At the intersection of medicine, machine learning, and robotics"*
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Sanwal8&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
+</p>
+
+<p align="center">
+  ⭐️ From Sanwal8 | Last Updated: November 2025
+</p>
