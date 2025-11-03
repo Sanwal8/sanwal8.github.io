@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanwal Zafar - PhD Student & Medical Officer</title>
+    <title>Sanwal Zafar - PhD Student in AI</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -14,32 +14,90 @@
             padding: 60px 20px;
         }
         .container { max-width: 980px; margin: 0 auto; }
-        h1 { font-size: 56px; font-weight: 600; margin-bottom: 20px; letter-spacing: -0.02em; }
-        .tagline { font-size: 28px; color: #6e6e73; margin-bottom: 60px; }
-        .info { font-size: 21px; color: #6e6e73; margin-bottom: 80px; line-height: 1.8; }
-        .info strong { color: #1d1d1f; }
-        h2 { font-size: 40px; font-weight: 600; margin: 80px 0 40px; letter-spacing: -0.02em; }
-        .project { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid #d2d2d7; }
-        .project:last-child { border-bottom: none; }
-        .project h3 { font-size: 28px; font-weight: 600; margin-bottom: 12px; }
-        .project p { font-size: 19px; color: #6e6e73; line-height: 1.7; margin-bottom: 12px; }
-        .project .tech { font-size: 17px; color: #0071e3; margin-top: 12px; }
-        .links { margin-top: 80px; display: flex; gap: 20px; flex-wrap: wrap; }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #0071e3;
-            color: white;
-            text-decoration: none;
-            border-radius: 980px;
-            font-size: 17px;
-            transition: background 0.2s;
+        h1 { 
+            font-size: 56px; 
+            font-weight: 600; 
+            margin-bottom: 20px; 
+            letter-spacing: -0.02em;
         }
-        .btn:hover { background: #0077ed; }
-        .interests { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .interest-item { padding: 20px; background: #f5f5f7; border-radius: 12px; }
-        .interest-item h4 { font-size: 21px; font-weight: 600; margin-bottom: 8px; }
-        .interest-item p { font-size: 17px; color: #6e6e73; }
+        .tagline { 
+            font-size: 28px; 
+            color: #6e6e73; 
+            margin-bottom: 60px;
+            font-weight: 400;
+        }
+        .info { 
+            font-size: 21px; 
+            color: #6e6e73; 
+            margin-bottom: 80px; 
+            line-height: 1.8; 
+        }
+        .info strong { color: #1d1d1f; }
+        h2 { 
+            font-size: 40px; 
+            font-weight: 600; 
+            margin: 80px 0 40px; 
+            letter-spacing: -0.02em; 
+        }
+        .project { 
+            margin-bottom: 60px; 
+            padding-bottom: 60px; 
+            border-bottom: 1px solid #d2d2d7; 
+        }
+        .project:last-child { border-bottom: none; }
+        .project h3 { 
+            font-size: 28px; 
+            font-weight: 600; 
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        .project p { 
+            font-size: 19px; 
+            color: #6e6e73; 
+            line-height: 1.7; 
+            margin-bottom: 12px; 
+        }
+        .project .tech { 
+            font-size: 17px; 
+            color: #0071e3; 
+            margin-top: 16px; 
+        }
+        .badges { 
+            display: flex; 
+            gap: 8px; 
+            flex-wrap: wrap; 
+            margin-top: 60px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .contact { 
+            margin-top: 80px; 
+            font-size: 21px;
+            color: #6e6e73;
+        }
+        .contact a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .stats {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .stats img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
         @media (max-width: 768px) {
             h1 { font-size: 40px; }
             .tagline { font-size: 21px; }
@@ -50,71 +108,75 @@
 <body>
     <div class="container">
         <h1>Sanwal Zafar</h1>
-        <p class="tagline">PhD Student & Medical Officer</p>
+        <p class="tagline">I train deep neural nets at scale.</p>
 
         <div class="info">
-            <p><strong>PhD Student</strong> in Industrial Engineering & Management at Shanghai Jiao Tong University</p>
-            <p><strong>Medical Officer</strong> at Shifa Hospital, Sargodha, Pakistan</p>
-            <p><strong>Research Focus:</strong> Computational Pathology, Machine Learning in Healthcare, Human-Robot Collaboration</p>
-        </div>
-
-        <h2>Research Interests</h2>
-        <div class="interests">
-            <div class="interest-item">
-                <h4>🔬 Computational Pathology</h4>
-                <p>Foundation models for whole-slide image analysis and biomarker prediction</p>
-            </div>
-            <div class="interest-item">
-                <h4>🧬 Precision Medicine</h4>
-                <p>AI-driven genomic prediction from histopathology imaging</p>
-            </div>
-            <div class="interest-item">
-                <h4>🏥 Healthcare AI</h4>
-                <p>Clinical decision support for ICU and oncology applications</p>
-            </div>
-            <div class="interest-item">
-                <h4>🤖 Robotics</h4>
-                <p>Safety-constrained human-robot collaboration in warehouses</p>
-            </div>
+            <p><strong>PhD (Artificial Intelligence)</strong> @ Shanghai Jiao Tong University</p>
+            <p>Advised by <strong>Assoc. Prof. Wei Qin</strong></p>
         </div>
 
         <h2>Featured Projects</h2>
 
         <div class="project">
-            <h3>IHGAMP: HRD Prediction from Histopathology</h3>
-            <p>Integrative histopathology-genomics framework predicting homologous recombination deficiency directly from H&E whole-slide images. Validated across 9 CPTAC cancer types with 5,607 slides and trained on 20,007 TCGA slides.</p>
-            <p class="tech">Tech: Python, PyTorch, OpenCLIP, Ridge Regression, Bootstrap CI</p>
+            <h3>🔬 OpenSlideFM: Efficient Foundation Model for Computational Pathology</h3>
+            <p>A dual-scale transformer foundation model that balances performance with accessibility. Pre-trained on 20,000 TCGA slides across 31 cancer types using self-supervised learning, achieving 81.21% accuracy on pan-cancer classification with only 35M parameters.</p>
+            <p>Deployable on consumer GPUs (RTX 4090, 24GB) versus datacenter requirements of existing models, democratizing foundation model access for resource-constrained institutions.</p>
+            <p class="tech">Status: Manuscript in preparation for Nature family journals</p>
+            <p class="tech">Tech: PyTorch, OpenSlide, Self-supervised Learning, Transformers</p>
         </div>
 
         <div class="project">
-            <h3>OpenSlideFM: Foundation Model for WSI Analysis</h3>
-            <p>Self-supervised foundation model benchmarked against state-of-the-art models (UNI, Virchow2, CONCH) on CAMELYON16/17 and PANDA Gleason grading tasks using multiple instance learning architecture.</p>
-            <p class="tech">Tech: PyTorch, OpenSlide, MIL, Self-supervised Learning</p>
+            <h3>🏥 Sentinel-API: Staffable ICU Early-Warning System</h3>
+            <p>A multi-horizon mortality prediction system with calibrated multi-center validation and alert-budget guardrails. Maintains strong discrimination and tight calibration across hospitals and time horizons with resource-aware deployment through workload-constrained operating points.</p>
+            <p>Translates threshold choices into alerts per 100 admissions, maps to clinician review time and net monetary benefit, enabling monitored roll-out ready for governance approval.</p>
+            <p class="tech">Tech: Python, XGBoost, scikit-learn, Clinical Decision Support</p>
         </div>
 
         <div class="project">
-            <h3>COSMOS: ADC Target Prediction</h3>
-            <p>AI framework for predicting TROP2 and NECTIN-4 expression from H&E slides to guide antibody-drug conjugate therapy selection. Incorporates proteomics supervision for enhanced accuracy.</p>
-            <p class="tech">Tech: Python, PyTorch, Multi-modal Learning, Proteomics</p>
+            <h3>🤖 Guard-Constrained Human-Robot Collaboration</h3>
+            <p>A planning-time digital twin framework for evaluating robot escort policies in warehouse operations, calibrated against 8,535 production waves (MAPE ≈ 3%). Enforces iso-time tolerance (ε = 0.5-2.0%) and protective-separation-distance constraints.</p>
+            <p>Achieves −1.8% to −3.1% median ergonomic improvement with 48.9-62.2% adoption rate. Includes bootstrap uncertainty quantification (800 resamples) and fairness stratification suitable for safety governance.</p>
+            <p class="tech">Status: Under review at International Journal of Production Research</p>
+            <p class="tech">Tech: Python, Digital Twin, ROS, Safety Analysis</p>
         </div>
 
-        <div class="project">
-            <h3>ICU Mortality Prediction</h3>
-            <p>Machine learning pipeline predicting mortality risk in ICU patients using time-series analysis of vital signs and lab values, with focus on sepsis scenarios.</p>
-            <p class="tech">Tech: Python, XGBoost, scikit-learn, Time-series Analysis</p>
+        <h2>Tech Stack</h2>
+        <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">R</span>
+            <span class="badge">PyTorch</span>
+            <span class="badge">scikit-learn</span>
+            <span class="badge">XGBoost</span>
+            <span class="badge">OpenSlide</span>
+            <span class="badge">MONAI</span>
+            <span class="badge">Git</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Jupyter</span>
         </div>
 
-        <div class="project">
-            <h3>Guard-Constrained Human-Robot Co-Navigation</h3>
-            <p>Digital twin framework for safety-constrained navigation in warehouse fulfillment systems with real-time collision avoidance in dynamic environments. Submitted to IJPR Special Issue.</p>
-            <p class="tech">Tech: Python, ROS, Gazebo, TensorFlow, Digital Twin</p>
+        <div class="stats">
+            <img src="https://github-readme-stats.vercel.app/api?username=Sanwal8&show_icons=true&theme=tokyonight" alt="GitHub Stats">
         </div>
 
-        <div class="links">
-            <a href="https://github.com/sanwal8" class="btn">GitHub</a>
-            <a href="https://linkedin.com/in/sanwal-zafar" class="btn">LinkedIn</a>
-            <a href="https://scholar.google.com" class="btn">Google Scholar</a>
-            <a href="mailto:your.email@sjtu.edu.cn" class="btn">Email</a>
+        <h2>Current Focus (2025)</h2>
+        <div class="info">
+            <p>🔬 Benchmarking OpenSlideFM foundation model</p>
+            <p>💊 Developing temporal biomarker discovery framework</p>
+        </div>
+
+        <h2>Open Science</h2>
+        <div class="info">
+            <p>Committed to reproducible research:</p>
+            <p>✅ Code released under open licenses</p>
+            <p>✅ Pre-trained model weights publicly available</p>
+            <p>✅ Comprehensive documentation</p>
+            <p>✅ Reproducible analysis scripts</p>
+            <p style="margin-top: 20px;">Open to collaborations in computational pathology, clinical AI, and human-robot collaboration.</p>
+        </div>
+
+        <div class="contact">
+            <p>📧 <a href="mailto:sanwalzafar@sjtu.edu.cn">sanwalzafar@sjtu.edu.cn</a></p>
+            <p style="margin-top: 10px;">Open to collaborations in computational pathology and clinical AI.</p>
         </div>
     </div>
 </body>
