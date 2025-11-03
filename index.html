@@ -3,75 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanwal Zafar</title>
+    <title>Sanwal Zafar - PhD Student & Medical Officer</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #1d1d1f;
-            background: #ffffff;
+            background: #fff;
             padding: 60px 20px;
         }
-        .container {
-            max-width: 980px;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 56px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 20px;
-        }
-        .tagline {
-            font-size: 28px;
-            font-weight: 400;
-            color: #6e6e73;
-            margin-bottom: 60px;
-        }
-        .info {
-            font-size: 21px;
-            color: #6e6e73;
-            margin-bottom: 80px;
-            line-height: 1.8;
-        }
-        .info strong {
-            color: #1d1d1f;
-        }
-        h2 {
-            font-size: 40px;
-            font-weight: 600;
-            margin-bottom: 40px;
-            margin-top: 80px;
-        }
-        .project {
-            margin-bottom: 60px;
-            padding-bottom: 60px;
-            border-bottom: 1px solid #d2d2d7;
-        }
-        .project:last-child {
-            border-bottom: none;
-        }
-        .project h3 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .project p {
-            font-size: 19px;
-            color: #6e6e73;
-            line-height: 1.7;
-        }
-        .links {
-            margin-top: 80px;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+        .container { max-width: 980px; margin: 0 auto; }
+        h1 { font-size: 56px; font-weight: 600; margin-bottom: 20px; letter-spacing: -0.02em; }
+        .tagline { font-size: 28px; color: #6e6e73; margin-bottom: 60px; }
+        .info { font-size: 21px; color: #6e6e73; margin-bottom: 80px; line-height: 1.8; }
+        .info strong { color: #1d1d1f; }
+        h2 { font-size: 40px; font-weight: 600; margin: 80px 0 40px; letter-spacing: -0.02em; }
+        .project { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid #d2d2d7; }
+        .project:last-child { border-bottom: none; }
+        .project h3 { font-size: 28px; font-weight: 600; margin-bottom: 12px; }
+        .project p { font-size: 19px; color: #6e6e73; line-height: 1.7; margin-bottom: 12px; }
+        .project .tech { font-size: 17px; color: #0071e3; margin-top: 12px; }
+        .links { margin-top: 80px; display: flex; gap: 20px; flex-wrap: wrap; }
         .btn {
             display: inline-block;
             padding: 12px 24px;
@@ -82,66 +35,86 @@
             font-size: 17px;
             transition: background 0.2s;
         }
-        .btn:hover {
-            background: #0077ed;
-        }
-        .contact {
-            margin-top: 100px;
-            padding-top: 40px;
-            border-top: 1px solid #d2d2d7;
-            font-size: 19px;
-            color: #6e6e73;
-        }
-        .contact strong {
-            color: #1d1d1f;
-        }
+        .btn:hover { background: #0077ed; }
+        .interests { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .interest-item { padding: 20px; background: #f5f5f7; border-radius: 12px; }
+        .interest-item h4 { font-size: 21px; font-weight: 600; margin-bottom: 8px; }
+        .interest-item p { font-size: 17px; color: #6e6e73; }
         @media (max-width: 768px) {
-            body { padding: 40px 20px; }
             h1 { font-size: 40px; }
             .tagline { font-size: 21px; }
             h2 { font-size: 32px; }
-            .project h3 { font-size: 24px; }
-            .info, .project p, .contact { font-size: 17px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Sanwal Zafar</h1>
-        <div class="tagline">I train deep neural nets at scale.</div>
+        <p class="tagline">PhD Student & Medical Officer</p>
 
         <div class="info">
-            <strong>PhD Student</strong> at Shanghai Jiao Tong University<br>
-            Advised by Prof. Wei Qin
+            <p><strong>PhD Student</strong> in Industrial Engineering & Management at Shanghai Jiao Tong University</p>
+            <p><strong>Medical Officer</strong> at Shifa Hospital, Sargodha, Pakistan</p>
+            <p><strong>Research Focus:</strong> Computational Pathology, Machine Learning in Healthcare, Human-Robot Collaboration</p>
         </div>
 
-        <h2>Projects</h2>
+        <h2>Research Interests</h2>
+        <div class="interests">
+            <div class="interest-item">
+                <h4>🔬 Computational Pathology</h4>
+                <p>Foundation models for whole-slide image analysis and biomarker prediction</p>
+            </div>
+            <div class="interest-item">
+                <h4>🧬 Precision Medicine</h4>
+                <p>AI-driven genomic prediction from histopathology imaging</p>
+            </div>
+            <div class="interest-item">
+                <h4>🏥 Healthcare AI</h4>
+                <p>Clinical decision support for ICU and oncology applications</p>
+            </div>
+            <div class="interest-item">
+                <h4>🤖 Robotics</h4>
+                <p>Safety-constrained human-robot collaboration in warehouses</p>
+            </div>
+        </div>
+
+        <h2>Featured Projects</h2>
 
         <div class="project">
-            <h3>OpenSlideFM</h3>
-            <p>Dual-scale transformer foundation model for computational pathology. Pre-trained on 20,000 TCGA slides achieving 81.21% pan-cancer accuracy with only 35M parameters.</p>
+            <h3>IHGAMP: HRD Prediction from Histopathology</h3>
+            <p>Integrative histopathology-genomics framework predicting homologous recombination deficiency directly from H&E whole-slide images. Validated across 9 CPTAC cancer types with 5,607 slides and trained on 20,007 TCGA slides.</p>
+            <p class="tech">Tech: Python, PyTorch, OpenCLIP, Ridge Regression, Bootstrap CI</p>
         </div>
 
         <div class="project">
-            <h3>Sentinel-API</h3>
-            <p>Multi-horizon ICU mortality prediction system with calibrated multi-center validation and alert-budget guardrails for resource-aware deployment.</p>
+            <h3>OpenSlideFM: Foundation Model for WSI Analysis</h3>
+            <p>Self-supervised foundation model benchmarked against state-of-the-art models (UNI, Virchow2, CONCH) on CAMELYON16/17 and PANDA Gleason grading tasks using multiple instance learning architecture.</p>
+            <p class="tech">Tech: PyTorch, OpenSlide, MIL, Self-supervised Learning</p>
         </div>
 
         <div class="project">
-            <h3>Guard-Constrained HRC</h3>
-            <p>Digital twin framework for warehouse robot policies. Calibrated on 8,535 production waves achieving median −1.8% to −3.1% ergonomic improvement.</p>
+            <h3>COSMOS: ADC Target Prediction</h3>
+            <p>AI framework for predicting TROP2 and NECTIN-4 expression from H&E slides to guide antibody-drug conjugate therapy selection. Incorporates proteomics supervision for enhanced accuracy.</p>
+            <p class="tech">Tech: Python, PyTorch, Multi-modal Learning, Proteomics</p>
+        </div>
+
+        <div class="project">
+            <h3>ICU Mortality Prediction</h3>
+            <p>Machine learning pipeline predicting mortality risk in ICU patients using time-series analysis of vital signs and lab values, with focus on sepsis scenarios.</p>
+            <p class="tech">Tech: Python, XGBoost, scikit-learn, Time-series Analysis</p>
+        </div>
+
+        <div class="project">
+            <h3>Guard-Constrained Human-Robot Co-Navigation</h3>
+            <p>Digital twin framework for safety-constrained navigation in warehouse fulfillment systems with real-time collision avoidance in dynamic environments. Submitted to IJPR Special Issue.</p>
+            <p class="tech">Tech: Python, ROS, Gazebo, TensorFlow, Digital Twin</p>
         </div>
 
         <div class="links">
-            <a href="https://github.com/Sanwal8" class="btn">GitHub</a>
-            <a href="https://github.com/Sjtu-Fuxilab/onco-sentry" class="btn">OpenSlideFM</a>
-            <a href="https://github.com/Sjtu-Fuxilab/Sentinel-API" class="btn">Sentinel-API</a>
-            <a href="https://github.com/Sjtu-Fuxilab/Guard-Constrained-HRC" class="btn">Guard-HRC</a>
-        </div>
-
-        <div class="contact">
-            <strong>Contact</strong><br>
-            sanwalzafar@sjtu.edu.cn
+            <a href="https://github.com/sanwal8" class="btn">GitHub</a>
+            <a href="https://linkedin.com/in/sanwal-zafar" class="btn">LinkedIn</a>
+            <a href="https://scholar.google.com" class="btn">Google Scholar</a>
+            <a href="mailto:your.email@sjtu.edu.cn" class="btn">Email</a>
         </div>
     </div>
 </body>
