@@ -2,19 +2,23 @@
 
 I train deep neural nets at scale.
 
-PhD (Artificial Intelligence) @ Shanghai Jiao Tong University | Advised by Assoc. Prof. Wei Qin
+PhD (Artificial Intelligence) @ Shanghai Jiao Tong University, China | Advised by Assoc. Prof. Wei Qin
 
 ---
 
 ## 🚀 Featured Projects
 
+### 🧬 IHGAMP: HRD Prediction from Histopathology
+
+Integrative histopathology-genomics framework predicting homologous recombination deficiency (HRD) status directly from H&E whole-slide images. Validated across multiple CPTAC cancer cohorts including BRCA (gold standard with 30% HRD prevalence), CCRCC, and UCEC using Ridge regression with Platt calibration and bootstrap confidence intervals. Trained on 20,007 TCGA slides from 10,796 patients with scarHRD genomic labels, achieving robust multi-cohort validation for precision oncology applications.
+
 ### 🔬 [OpenSlideFM: Efficient Foundation Model for Computational Pathology](https://github.com/Sjtu-Fuxilab/onco-sentry)
 
-A dual-scale transformer foundation model that balances performance with accessibility. Pre-trained on 20,000 TCGA slides across 31 cancer types using self-supervised learning, achieving 81.21% accuracy on pan-cancer classification with only 35M parameters. Deployable on consumer GPUs (RTX 4090, 24GB) versus datacenter requirements of existing models, democratizing foundation model access for resource-constrained institutions. Manuscript in preparation for Nature family journals.
+A dual-scale transformer foundation model that balances performance with accessibility. Pre-trained on 20,000 TCGA slides across 31 cancer types using self-supervised learning, achieving 81.21% accuracy on pan-cancer classification with only 35M parameters. Deployable on consumer GPUs (RTX 4090, 24GB) versus datacenter requirements of existing models, democratizing foundation model access for resource-constrained institutions. Manuscript in preparation.
 
 ### 🏥 [Sentinel-API: Staffable ICU Early-Warning System](https://github.com/Sjtu-Fuxilab/Sentinel-API)
 
-A multi-horizon mortality prediction system with calibrated multi-center validation and alert-budget guardrails. Maintains strong discrimination and tight calibration across hospitals and time horizons with resource-aware deployment through workload-constrained operating points. Translates threshold choices into alerts per 100 admissions, maps to clinician review time and net monetary benefit, enabling monitored roll-out ready for governance approval.
+A multi-horizon mortality prediction system with calibrated multi-center validation and alert-budget guardrails. Maintains strong discrimination and tight calibration across hospitals and time horizons with resource-aware deployment through workload-constrained operating points. Translates threshold choices into alerts per 100 admissions, maps to clinician review time and net monetary benefit, enabling monitored roll-out ready for governance approval. **Under review at Scientific Reports (Nature).**
 
 ### 🤖 [Guard-Constrained Human-Robot Collaboration](https://github.com/Sjtu-Fuxilab/Guard-Constrained-HRC)
 
@@ -54,8 +58,9 @@ A planning-time digital twin framework for evaluating robot escort policies in w
 
 ## 🎯 Current Focus (2025)
 
-🔬 Benchmarking OpenSlideFM foundation model.    
+🔬 Benchmarking OpenSlideFM foundation model    
 💊 Developing temporal biomarker discovery framework  
+🧬 IHGAMP multi-cohort CPTAC validation
 
 ---
 
