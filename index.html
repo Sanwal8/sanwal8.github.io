@@ -3,409 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanwal Zafar - AI Researcher</title>
+    <title>Sanwal Zafar</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .container {
-            max-width: 1100px;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #fff;
+            padding: 40px 20px;
+            max-width: 900px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.98);
-            border-radius: 24px;
-            padding: 60px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
         }
 
         .header {
             display: flex;
-            align-items: center;
             gap: 40px;
-            margin-bottom: 60px;
-            padding-bottom: 40px;
-            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 50px;
+            align-items: flex-start;
         }
 
         .profile-pic {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 6px solid #2563eb;
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
-            transition: transform 0.3s ease;
+            flex-shrink: 0;
         }
 
-        .profile-pic:hover {
-            transform: scale(1.05);
+        .header-text {
+            flex: 1;
         }
 
-        .header-text h1 {
-            font-size: 52px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 12px;
-        }
-
-        .tagline {
-            font-size: 24px;
-            color: #555;
-            font-weight: 500;
-            margin-bottom: 16px;
-        }
-
-        .affiliation {
-            font-size: 18px;
-            color: #777;
-            line-height: 1.8;
-        }
-
-        .affiliation strong {
-            color: #2563eb;
+        h1 {
+            font-size: 36px;
             font-weight: 600;
+            margin-bottom: 30px;
+            color: #111;
+        }
+
+        .bio {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .bio a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        .bio a:hover {
+            border-bottom: 1px solid #0066cc;
         }
 
         h2 {
-            font-size: 36px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin: 60px 0 30px;
-            position: relative;
-            padding-bottom: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #111;
         }
 
-        h2:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-            border-radius: 2px;
+        .research-interests {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .section {
+            margin-top: 50px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #111;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
         }
 
         .project {
-            background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
-            padding: 32px;
-            border-radius: 16px;
-            margin-bottom: 24px;
-            border-left: 5px solid #2563eb;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            margin-bottom: 35px;
         }
 
-        .project:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
-        }
-
-        .project:hover:before {
-            opacity: 1;
-        }
-
-        .project h3 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .project h3 a {
-            color: #1a1a1a;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .project h3 a:hover {
-            color: #2563eb;
-        }
-
-        .project-emoji {
-            font-size: 32px;
-        }
-
-        .github-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            color: #2563eb;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            margin-top: 12px;
-            padding: 8px 16px;
-            background: white;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .github-link:hover {
-            background: #2563eb;
-            color: white;
-            transform: translateX(4px);
-        }
-
-        .project p {
-            font-size: 17px;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 12px;
-        }
-
-        .project .status {
-            display: inline-block;
-            padding: 6px 14px;
-            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-            color: white;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-top: 12px;
-        }
-
-        .project .tech {
-            font-size: 15px;
-            color: #2563eb;
-            margin-top: 12px;
-            font-weight: 500;
-        }
-
-        .badges {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .badge {
-            padding: 10px 20px;
-            background: white;
-            border: 2px solid #2563eb;
-            color: #2563eb;
-            border-radius: 25px;
-            font-size: 15px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .badge:hover {
-            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
-        }
-
-        .stats {
-            margin: 40px 0;
-            text-align: center;
-            padding: 30px;
-            background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
-            border-radius: 16px;
-        }
-
-        .stats img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        .focus-section {
-            background: linear-gradient(135deg, #fef2f2 0%, #eff6ff 100%);
-            padding: 30px;
-            border-radius: 16px;
-            margin: 30px 0;
-        }
-
-        .focus-section p {
+        .project-title {
             font-size: 18px;
-            color: #555;
-            margin: 12px 0;
-            padding-left: 8px;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .project-title a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        .project-title a:hover {
+            color: #0066cc;
+        }
+
+        .project-meta {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .project-desc {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .news-content {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #333;
         }
 
         .contact {
-            margin-top: 60px;
-            padding: 40px;
-            background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
-            border-radius: 16px;
-            text-align: center;
-            color: white;
-        }
-
-        .contact h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+            color: #333;
         }
 
         .contact a {
-            color: white;
+            color: #0066cc;
             text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            padding: 12px 30px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 25px;
-            display: inline-block;
-            margin-top: 12px;
-            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
         }
 
         .contact a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
+            border-bottom: 1px solid #0066cc;
         }
 
+        /* Mobile responsive */
         @media (max-width: 768px) {
-            .container { padding: 30px; }
-            .header { flex-direction: column; text-align: center; }
-            .header-text h1 { font-size: 36px; }
-            .profile-pic { width: 150px; height: 150px; }
-            h2 { font-size: 28px; }
+            body {
+                padding: 30px 15px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-pic {
+                width: 180px;
+                height: 180px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .bio, .research-interests {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="profile.jpg" alt="Sanwal Zafar" class="profile-pic">
-            <div class="header-text">
-                <h1>Sanwal Zafar</h1>
-                <p class="tagline">I train deep neural nets at scale.</p>
-                <div class="affiliation">
-                    <p><strong>PhD (Artificial Intelligence)</strong> @ Shanghai Jiao Tong University, China</p>
-                    <p>Advised by <strong>Assoc. Prof. Wei Qin</strong></p>
-                </div>
+    <div class="header">
+        <img src="profile.jpg" alt="Sanwal Zafar" class="profile-pic">
+        <div class="header-text">
+            <h1>Sanwal Zafar</h1>
+
+            <p class="bio">
+                I train deep neural nets at scale.
+            </p>
+
+            <p class="bio">
+                I am a PhD student in Artificial Intelligence at <a href="https://en.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>, China, advised by <a href="#" target="_blank">Assoc. Prof. Wei Qin</a>.
+            </p>
+
+            <p class="bio">
+                My research focuses on computational pathology, clinical AI systems, and human-robot collaboration in industrial settings.
+            </p>
+
+            <h2>Research Interests</h2>
+            <p class="research-interests">
+                Foundation Models for Medical Imaging, Self-supervised Learning, Clinical Decision Support Systems, Digital Twins, Human-Robot Collaboration
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Publications & Preprints</div>
+
+        <div class="project">
+            <div class="project-title">
+                <a href="https://github.com/Sjtu-Fuxilab/onco-sentry" target="_blank">OpenSlideFM: Efficient Foundation Model for Computational Pathology</a>
+            </div>
+            <div class="project-meta">Manuscript in Preparation</div>
+            <div class="project-desc">
+                A dual-scale transformer foundation model achieving 81.21% accuracy on pan-cancer classification with only 35M parameters. Pre-trained on 20,000 TCGA slides across 31 cancer types, deployable on consumer GPUs (RTX 4090, 24GB).
             </div>
         </div>
 
-        <h2>Featured Research Projects</h2>
-
         <div class="project">
-            <h3><span class="project-emoji">🧬</span> IHGAMP: HRD Prediction from Histopathology</h3>
-            <p>Integrative histopathology-genomics framework predicting homologous recombination deficiency (HRD) status directly from H&E whole-slide images. Validated across multiple CPTAC cancer cohorts including BRCA (gold standard with 30% HRD prevalence), CCRCC, and UCEC using Ridge regression with Platt calibration and bootstrap confidence intervals.</p>
-            <p>Trained on 20,007 TCGA slides from 10,796 patients with scarHRD genomic labels, achieving robust multi-cohort validation for precision oncology applications.</p>
-            <p class="tech">Tech: Python, PyTorch, OpenCLIP ViT-B/16, Ridge Regression, Bootstrap CI</p>
-        </div>
-
-        <div class="project">
-            <h3>
-                <span class="project-emoji">🔬</span> 
-                <a href="https://github.com/Sjtu-Fuxilab/onco-sentry" target="_blank">OpenSlideFM: Efficient Foundation Model</a>
-            </h3>
-            <p>A dual-scale transformer foundation model that balances performance with accessibility. Pre-trained on 20,000 TCGA slides across 31 cancer types using self-supervised learning, achieving 81.21% accuracy on pan-cancer classification with only 35M parameters.</p>
-            <p>Deployable on consumer GPUs (RTX 4090, 24GB) versus datacenter requirements of existing models, democratizing foundation model access for resource-constrained institutions.</p>
-            <span class="status">Manuscript in Preparation</span>
-            <p class="tech">Tech: PyTorch, OpenSlide, Self-supervised Learning, Transformers</p>
-            <a href="https://github.com/Sjtu-Fuxilab/onco-sentry" target="_blank" class="github-link">
-                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-                View Repository
-            </a>
+            <div class="project-title">
+                <a href="https://github.com/Sjtu-Fuxilab/Sentinel-API" target="_blank">Sentinel-API: Staffable ICU Early-Warning System</a>
+            </div>
+            <div class="project-meta">Under Review at Scientific Reports (Nature)</div>
+            <div class="project-desc">
+                Multi-horizon mortality prediction system with calibrated multi-center validation and alert-budget guardrails. Translates threshold choices into alerts per 100 admissions, enabling monitored roll-out ready for governance approval.
+            </div>
         </div>
 
         <div class="project">
-            <h3>
-                <span class="project-emoji">🏥</span> 
-                <a href="https://github.com/Sjtu-Fuxilab/Sentinel-API" target="_blank">Sentinel-API: ICU Early-Warning System</a>
-            </h3>
-            <p>A multi-horizon mortality prediction system with calibrated multi-center validation and alert-budget guardrails. Maintains strong discrimination and tight calibration across hospitals and time horizons with resource-aware deployment.</p>
-            <p>Translates threshold choices into alerts per 100 admissions, maps to clinician review time and net monetary benefit, enabling monitored roll-out ready for governance approval.</p>
-            <span class="status">Under Review at Scientific Reports (Nature)</span>
-            <p class="tech">Tech: Python, XGBoost, scikit-learn, Clinical Decision Support</p>
-            <a href="https://github.com/Sjtu-Fuxilab/Sentinel-API" target="_blank" class="github-link">
-                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-                View Repository
-            </a>
+            <div class="project-title">
+                <a href="https://github.com/Sjtu-Fuxilab/Guard-Constrained-HRC" target="_blank">Guard-Constrained Human-Robot Collaboration for Warehouse Operations</a>
+            </div>
+            <div class="project-meta">Under Review at International Journal of Production Research</div>
+            <div class="project-desc">
+                Digital twin framework for evaluating robot escort policies, calibrated against 8,535 production waves (MAPE ≈ 3%). Achieves −1.8% to −3.1% median ergonomic improvement with 48.9-62.2% adoption rate.
+            </div>
         </div>
 
         <div class="project">
-            <h3>
-                <span class="project-emoji">🤖</span> 
-                <a href="https://github.com/Sjtu-Fuxilab/Guard-Constrained-HRC" target="_blank">Guard-Constrained Human-Robot Collaboration</a>
-            </h3>
-            <p>A planning-time digital twin framework for evaluating robot escort policies in warehouse operations, calibrated against 8,535 production waves (MAPE ≈ 3%). Enforces iso-time tolerance (ε = 0.5-2.0%) and protective-separation-distance constraints.</p>
-            <p>Achieves −1.8% to −3.1% median ergonomic improvement with 48.9-62.2% adoption rate. Includes bootstrap uncertainty quantification (800 resamples) and fairness stratification suitable for safety governance.</p>
-            <span class="status">Under Review at IJPR</span>
-            <p class="tech">Tech: Python, Digital Twin, ROS, Safety Analysis</p>
-            <a href="https://github.com/Sjtu-Fuxilab/Guard-Constrained-HRC" target="_blank" class="github-link">
-                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-                View Repository
-            </a>
+            <div class="project-title">IHGAMP: Integrative Histopathology-Genomics Analysis for HRD Prediction</div>
+            <div class="project-meta">In Progress</div>
+            <div class="project-desc">
+                Framework predicting homologous recombination deficiency directly from H&E whole-slide images. Validated across multiple CPTAC cancer cohorts including BRCA, CCRCC, and UCEC. Trained on 20,007 TCGA slides from 10,796 patients.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">News</div>
+
+        <div class="news-item">
+            <div class="news-date">November 2025</div>
+            <div class="news-content">
+                Benchmarking OpenSlideFM foundation model against state-of-the-art models (UNI, Virchow2, CONCH).
+            </div>
         </div>
 
-        <h2>Tech Stack</h2>
-        <div class="badges">
-            <span class="badge">Python</span>
-            <span class="badge">R</span>
-            <span class="badge">PyTorch</span>
-            <span class="badge">scikit-learn</span>
-            <span class="badge">XGBoost</span>
-            <span class="badge">OpenSlide</span>
-            <span class="badge">MONAI</span>
-            <span class="badge">Git</span>
-            <span class="badge">Docker</span>
-            <span class="badge">Jupyter</span>
+        <div class="news-item">
+            <div class="news-date">October 2025</div>
+            <div class="news-content">
+                Submitted Guard-Constrained Human-Robot Collaboration paper to IJPR Special Issue on Digital Twins.
+            </div>
         </div>
 
-        <div class="stats">
-            <img src="https://github-readme-stats.vercel.app/api?username=Sanwal8&show_icons=true&theme=tokyonight" alt="GitHub Stats">
+        <div class="news-item">
+            <div class="news-date">September 2025</div>
+            <div class="news-content">
+                Completed IHGAMP multi-cohort validation on CPTAC datasets (BRCA, CCRCC, UCEC).
+            </div>
         </div>
+    </div>
 
-        <h2>Current Focus (2025)</h2>
-        <div class="focus-section">
-            <p>🔬 Benchmarking OpenSlideFM foundation model</p>
-            <p>💊 Developing temporal biomarker discovery framework</p>
-            <p>🧬 IHGAMP multi-cohort CPTAC validation</p>
-        </div>
-
-        <h2>Open Science Commitment</h2>
-        <div class="focus-section">
-            <p>✅ Code released under open licenses</p>
-            <p>✅ Pre-trained model weights publicly available</p>
-            <p>✅ Comprehensive documentation</p>
-            <p>✅ Reproducible analysis scripts</p>
-            <p style="margin-top: 20px; font-weight: 600;">Open to collaborations in computational pathology, clinical AI, and human-robot collaboration.</p>
-        </div>
-
-        <div class="contact">
-            <h3>Let's Collaborate</h3>
-            <p>Open to collaborations in computational pathology and clinical AI</p>
-            <a href="mailto:sanwalzafar@sjtu.edu.cn">📧 sanwalzafar@sjtu.edu.cn</a>
-        </div>
+    <div class="contact">
+        <strong>Contact:</strong> <a href="mailto:sanwalzafar@sjtu.edu.cn">sanwalzafar@sjtu.edu.cn</a>
+        <br><br>
+        Open to collaborations in computational pathology and clinical AI.
     </div>
 </body>
 </html>
